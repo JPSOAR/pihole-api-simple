@@ -1,7 +1,7 @@
 ## Description
 A simple python wrapper around the Pi-Hole Admin API.  I created this by looking at the [api.php](https://github.com/pi-hole/web/blob/master/api.php) file in the [pi-hole/web repository](https://github.com/pi-hole/web)
 ## Usage
-Copy `pihole_api_simple.py` to your project's directory then import it into your script.  Mix and match from the available functions in the example.py script.
+Copy `pihole_api_simple.py` to your project's directory then import it into your script.  Mix and match from the available functions in the example.py script.  Your Pi-Hole API Token can be obtained by going to your `Pi-hole's web interface` -> `Settings` -> `API` -> `Show API Token`
 
 ```python
 from pihole_api_simple import PiHole
