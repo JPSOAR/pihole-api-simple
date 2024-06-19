@@ -1,10 +1,5 @@
-## Description
-A simple python wrapper around the Pi-Hole Admin API.  I created this by looking at the [api.php](https://github.com/pi-hole/web/blob/master/api.php) file in the [pi-hole/web repository](https://github.com/pi-hole/web)
-## Usage
-Copy `pihole_api_simple.py` to your project's directory then import it into your script.  Mix and match from the available functions in the example.py script.
-
-```python
 from pihole_api_simple import PiHole
+
 
 # Create a PiHole object.  Replace http://pi.hole with the IP or hostname of your Pi-hole
 client = PiHole("http://pi.hole",api_token="your-api-token-here")
@@ -47,9 +42,3 @@ print(client.update_custom_cname('add','test.local','example.local'))
 
 # Delete custom CNAME record
 print(client.update_custom_cname('delete','test.local','example.local'))
-
-```
-
-## Disclaimer
-1. This is not assosciated with the official Pi-hole project
-2. Spam running the `example.py` script caused my Pi-hole instance to crash and need to be rebooted
